@@ -3,7 +3,7 @@ package com.adnan.microservices.camel_microservice_a.routes;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class MulticastPatternRouter extends RouteBuilder {
 
     @Override

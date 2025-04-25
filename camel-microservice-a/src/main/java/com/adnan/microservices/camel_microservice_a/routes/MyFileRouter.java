@@ -34,6 +34,9 @@ public class MyFileRouter extends RouteBuilder {
                  * In when method we are passing a separte bean where business logic is there
                  */
                 .when(method(deciderBean)) //
+                /*
+                 * Content Based Routing - Based on the content we do routing - by using choice() method
+                 */
                 .when(simple("${file:ext} ends with 'xml'")) //ends with operator of simple language, == please read the documentation
                 .log("XML FILE")
                 .when(simple("${body} contains 'USD'"))
